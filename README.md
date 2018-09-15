@@ -1,5 +1,9 @@
 # Blog
-Simple angular blog app which shows some basic posts with some interactivity.
+Simple blog app build with Angular 6 in which you can create posts and view them in a list : )
+
+## Install
+
+Run `npm install`. npm will load all the app dependencies from his repo into your local machine.
 
 ## Development server
 
