@@ -5,7 +5,7 @@
   <p class="float-right">{{post.created_at | date: 'short'}}</p>
   <h2>{{post.title}}</h2>
 
-  <p>Contenu</p>
+  <p>{{post.content}}</p>
 
   <button type="button" class="btn btn-success"
           (click)="onLoveIt()">Love it</button>
@@ -13,7 +13,5 @@
   <button type="button" class="btn btn-danger"
           (click)="onDontLoveIt()">Don't love it</button>
 
-  <button class="btn btn-default float-right">Delete post</button>
-
-
+  <button class="btn btn-danger float-right" (click)="onDeletePost()">Supprimer post</button>
 </li>
