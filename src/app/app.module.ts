@@ -13,8 +13,8 @@ import {PostsService} from './services/posts.service';
 const appRoutes: Routes = [
   {path: 'post-listing', component: PostListComponentComponent},
   {path: 'post-creation', component: PostCreationComponentComponent},
-  {path: '', component: PostListComponentComponent},
-  {path: '**', component: PostListComponentComponent}
+  {path: '', redirectTo: 'post-listing', pathMatch: 'full'},
+  {path: '**', redirectTo: 'post-listing', pathMatch: 'full'}
 ];
 
 @NgModule({
